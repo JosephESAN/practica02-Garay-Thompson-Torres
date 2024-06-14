@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376512076941",
+    "project_id": "practica2-96874",
+    "storage_bucket": "practica2-96874.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376512076941:android:a6c721d6aeb5f039a316c4",
+        "android_client_info": {
+          "package_name": "com.example.practica02_garay_thompson_torres"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3EBHqnvSGOeScFF_ZF5JIUsCk7Vao3WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
