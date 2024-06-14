@@ -40,4 +40,13 @@
         app:layout_constraintEnd_toEndOf="@+id/etCorreo"
         app:layout_constraintStart_toStartOf="@+id/etCorreo"
         app:layout_constraintTop_toBottomOf="@+id/etContra" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="368dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
