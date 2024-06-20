@@ -7,14 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="243dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copa_america" />
+
     <EditText
         android:id="@+id/etCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="111dp"
         android:ems="10"
         android:hint="Ingrese Email"
         android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,30 +33,25 @@
         android:id="@+id/etContra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="41dp"
         android:ems="10"
         android:hint="Ingrese Password"
-        android:inputType="text"
-        app:layout_constraintStart_toStartOf="@+id/etCorreo"
-        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+        android:inputType="text|textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
 
     <Button
         android:id="@+id/btLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
         android:text="Login"
-        app:layout_constraintEnd_toEndOf="@+id/etCorreo"
-        app:layout_constraintStart_toStartOf="@+id/etCorreo"
-        app:layout_constraintTop_toBottomOf="@+id/etContra" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContra"
+        app:layout_constraintVertical_bias="0.265" />
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberPassword"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="368dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
