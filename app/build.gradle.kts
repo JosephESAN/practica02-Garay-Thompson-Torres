@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,8 +47,23 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.androidx.leanback)
+    implementation(libs.androidx.media3.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    // Firebase Authentication
+    implementation("com.google.firebase:firebase-auth-ktx")
+    // Firebase Realtime Database
+    implementation("com.google.firebase:firebase-database-ktx")
+    implementation("androidx.fragment:fragment-ktx:1.5.2")
+    //Picasso
+    implementation("com.squareup.picasso:picasso:2.7+")
 }
