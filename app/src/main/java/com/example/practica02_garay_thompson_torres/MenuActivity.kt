@@ -2,6 +2,7 @@ package com.example.practica02_garay_thompson_torres
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.practica02_garay_thompson_torres.ui.fragments.ListFragment
 import com.example.practica02_garay_thompson_torres.ui.fragments.RegisterFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -27,12 +28,12 @@ class MenuActivity : AppCompatActivity() {
                         .commit()
                     true
                 }
-                //R.id.navigation_list -> {
-                //    supportFragmentManager.beginTransaction()
-                //        .replace(R.id.fragment_container, ListFragment())
-                //        .commit()
-                //    true
-                //}
+                R.id.navigation_list -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, ListFragment())
+                        .commit()
+                    true
+                }
                 else -> false
             }
         }
